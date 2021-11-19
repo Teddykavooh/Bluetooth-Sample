@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type here:" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices:"
+        android:layout_below="@id/entry"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listV"
+        android:layout_below="@+id/label2"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioG"
+        android:layout_below="@+id/listV">
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/radioG">
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="FdBT"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Conn"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Clos" />
+    </LinearLayout>
+</RelativeLayout>

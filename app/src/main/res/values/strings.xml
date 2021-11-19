@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bluetooth Sample</string>
+    <string name="btM2">Bluetooth device found.</string>
+    <string name="btM1">No bluetooth adapter available.</string>
+    <string name="btM3">Bluetooth Opened.</string>
+    <string name="datasnt">Data sent.</string>
+    <string name="btM4">Bluetooth Closed.</string>
+</resources>
